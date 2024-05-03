@@ -1,0 +1,21 @@
+def dec2bin(number: int):
+  ans = ""
+  if (number == 0 ):
+    return 0
+  while (number ):
+    ans+= str(number&1)
+    number = number >> 1
+   
+  ans = ans[::-1]
+
+  return ans 
+
+
+
+def main():
+ number = int(input("Digite um numero inteiro: "))
+ printf(f"O valor binário do numero {number} e {dec2bin(number)}")
+
+
+if __name__ == "__main__":
+main()
